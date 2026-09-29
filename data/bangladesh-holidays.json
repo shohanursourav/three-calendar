@@ -1,0 +1,487 @@
+{
+  "_readme": [
+    "Official public holidays of Bangladesh (সরকারি ছুটি) — hand-curated from the notification of the",
+    "Ministry of Public Administration (জনপ্রশাসন মন্ত্রণালয়), Government of the People's Republic of Bangladesh.",
+    "'kind': 'general'   = সাধারণ ছুটি (general holiday, published in the yearly gazette notification)",
+    "'kind': 'executive' = নির্বাহী আদেশে সরকারি ছুটি (holiday under executive order)",
+    "Only years for which a government notification exists are listed here. No placeholder/dummy years are invented:",
+    "when a year is missing the UI shows an honest 'data not released yet' notice instead.",
+    "Add a new year by copying the shape below and filling in the dates from the official notification."
+  ],
+  "country": "BD",
+  "timezone": "Asia/Dhaka",
+  "years": {
+    "2025": {
+      "updated": "2025-08-05",
+      "title": {
+        "bn": "২০২৫ সালের সরকারি ছুটির তালিকা",
+        "en": "Public holidays of 2025"
+      },
+      "sources": [
+        {
+          "label": "জনপ্রশাসন মন্ত্রণালয়, ২১ অক্টোবর ২০২৪ প্রজ্ঞাপন (১২ দিন সাধারণ ছুটি + ১৪ দিন নির্বাহী আদেশে ছুটি)",
+          "url": "https://bangla.bdnews24.com/bangladesh/dc1e924c0f2d"
+        },
+        {
+          "label": "৫ আগস্ট ২০২৫: জুলাই গণ-অভ্যুত্থান দিবস সাধারণ ছুটি হিসেবে যুক্ত",
+          "url": "https://www.thedailystar.net/news/bangladesh/news/govt-announces-official-list-public-holidays-2026-4031596"
+        }
+      ],
+      "holidays": [
+        {
+          "date": "2025-02-15",
+          "bn": "শবে বরাত",
+          "en": "Shab-e-Barat",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-02-21",
+          "bn": "শহীদ দিবস ও আন্তর্জাতিক মাতৃভাষা দিবস",
+          "en": "Shaheed Day & International Mother Language Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2025-03-26",
+          "bn": "স্বাধীনতা ও জাতীয় দিবস",
+          "en": "Independence & National Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2025-03-28",
+          "bn": "জুমাতুল বিদা ও শবে কদর",
+          "en": "Jumatul Wida & Shab-e-Qadr",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-03-29",
+          "bn": "ঈদুল ফিতরের ছুটি",
+          "en": "Eid-ul-Fitr Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-03-30",
+          "bn": "ঈদুল ফিতরের ছুটি",
+          "en": "Eid-ul-Fitr Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-03-31",
+          "bn": "ঈদুল ফিতর",
+          "en": "Eid-ul-Fitr",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-04-01",
+          "bn": "ঈদুল ফিতরের ছুটি",
+          "en": "Eid-ul-Fitr Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-04-02",
+          "bn": "ঈদুল ফিতরের ছুটি",
+          "en": "Eid-ul-Fitr Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-04-14",
+          "bn": "পহেলা বৈশাখ (বাংলা নববর্ষ)",
+          "en": "Pahela Baishakh (Bangla New Year)",
+          "type": "cultural",
+          "kind": "executive",
+          "religion": "all"
+        },
+        {
+          "date": "2025-05-01",
+          "bn": "মে দিবস",
+          "en": "May Day",
+          "type": "international",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2025-05-11",
+          "bn": "বুদ্ধ পূর্ণিমা (বৈশাখী পূর্ণিমা)",
+          "en": "Buddha Purnima (Boishakhi Purnima)",
+          "type": "religious",
+          "kind": "general",
+          "religion": "buddhist"
+        },
+        {
+          "date": "2025-06-05",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-06-06",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-06-07",
+          "bn": "ঈদুল আজহা",
+          "en": "Eid-ul-Adha",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-06-08",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-06-09",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-06-10",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-07-06",
+          "bn": "আশুরা",
+          "en": "Ashura",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-08-05",
+          "bn": "জুলাই গণ-অভ্যুত্থান দিবস",
+          "en": "July Mass Uprising Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2025-08-16",
+          "bn": "শুভ জন্মাষ্টমী",
+          "en": "Janmashtami",
+          "type": "religious",
+          "kind": "general",
+          "religion": "hindu"
+        },
+        {
+          "date": "2025-09-05",
+          "bn": "ঈদে মিলাদুন্নবী (সা.)",
+          "en": "Eid-e-Miladunnabi (PBUH)",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2025-10-01",
+          "bn": "দুর্গাপূজা (মহানবমী)",
+          "en": "Durga Puja (Mahanabami)",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "hindu"
+        },
+        {
+          "date": "2025-10-02",
+          "bn": "দুর্গাপূজা (বিজয়া দশমী)",
+          "en": "Durga Puja (Bijoya Dashami)",
+          "type": "religious",
+          "kind": "general",
+          "religion": "hindu"
+        },
+        {
+          "date": "2025-12-16",
+          "bn": "বিজয় দিবস",
+          "en": "Victory Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2025-12-25",
+          "bn": "যিশু খ্রিস্টের জন্মদিন (বড়দিন)",
+          "en": "Christmas Day",
+          "type": "religious",
+          "kind": "general",
+          "religion": "christian"
+        }
+      ]
+    },
+    "2026": {
+      "updated": "2026-01-12",
+      "title": {
+        "bn": "২০২৬ সালের সরকারি ছুটির তালিকা",
+        "en": "Public holidays of 2026"
+      },
+      "sources": [
+        {
+          "label": "জনপ্রশাসন মন্ত্রণালয়ের প্রজ্ঞাপন, জানুয়ারি ২০২৬ (১৪ দিন সাধারণ ছুটি + ১৪ দিন নির্বাহী আদেশে ছুটি)",
+          "url": "https://www.thedailystar.net/news/bangladesh/news/govt-announces-official-list-public-holidays-2026-4031596"
+        }
+      ],
+      "holidays": [
+        {
+          "date": "2026-02-04",
+          "bn": "শবে বরাত",
+          "en": "Shab-e-Barat",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-02-21",
+          "bn": "শহীদ দিবস ও আন্তর্জাতিক মাতৃভাষা দিবস",
+          "en": "Shaheed Day & International Mother Language Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2026-03-17",
+          "bn": "শবে কদর",
+          "en": "Shab-e-Qadr",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-03-19",
+          "bn": "ঈদুল ফিতরের ছুটি",
+          "en": "Eid-ul-Fitr Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-03-20",
+          "bn": "জুমাতুল বিদা",
+          "en": "Jumatul Wida",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-03-21",
+          "bn": "ঈদুল ফিতর",
+          "en": "Eid-ul-Fitr",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-03-22",
+          "bn": "ঈদুল ফিতরের ছুটি",
+          "en": "Eid-ul-Fitr Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-03-23",
+          "bn": "ঈদুল ফিতরের ছুটি",
+          "en": "Eid-ul-Fitr Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-03-26",
+          "bn": "স্বাধীনতা ও জাতীয় দিবস",
+          "en": "Independence & National Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2026-04-14",
+          "bn": "পহেলা বৈশাখ (বাংলা নববর্ষ)",
+          "en": "Pahela Baishakh (Bangla New Year)",
+          "type": "cultural",
+          "kind": "executive",
+          "religion": "all"
+        },
+        {
+          "date": "2026-05-01",
+          "bn": "মে দিবস ও বুদ্ধ পূর্ণিমা (বৈশাখী পূর্ণিমা)",
+          "en": "May Day & Buddha Purnima (Boishakhi Purnima)",
+          "type": "international",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2026-05-26",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-05-27",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-05-28",
+          "bn": "ঈদুল আজহা",
+          "en": "Eid-ul-Adha",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-05-29",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-05-30",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-05-31",
+          "bn": "ঈদুল আজহার ছুটি",
+          "en": "Eid-ul-Adha Holiday",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-06-26",
+          "bn": "আশুরা",
+          "en": "Ashura",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-08-05",
+          "bn": "জুলাই গণ-অভ্যুত্থান দিবস",
+          "en": "July Mass Uprising Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2026-08-26",
+          "bn": "ঈদে মিলাদুন্নবী (সা.)",
+          "en": "Eid-e-Miladunnabi (PBUH)",
+          "type": "religious",
+          "kind": "general",
+          "religion": "muslim",
+          "lunar": true
+        },
+        {
+          "date": "2026-09-04",
+          "bn": "শুভ জন্মাষ্টমী",
+          "en": "Janmashtami",
+          "type": "religious",
+          "kind": "general",
+          "religion": "hindu"
+        },
+        {
+          "date": "2026-10-20",
+          "bn": "দুর্গাপূজা (মহানবমী)",
+          "en": "Durga Puja (Mahanabami)",
+          "type": "religious",
+          "kind": "executive",
+          "religion": "hindu"
+        },
+        {
+          "date": "2026-10-21",
+          "bn": "দুর্গাপূজা (বিজয়া দশমী)",
+          "en": "Durga Puja (Bijoya Dashami)",
+          "type": "religious",
+          "kind": "general",
+          "religion": "hindu"
+        },
+        {
+          "date": "2026-12-16",
+          "bn": "বিজয় দিবস",
+          "en": "Victory Day",
+          "type": "national",
+          "kind": "general",
+          "religion": "all"
+        },
+        {
+          "date": "2026-12-25",
+          "bn": "যিশু খ্রিস্টের জন্মদিন (বড়দিন)",
+          "en": "Christmas Day",
+          "type": "religious",
+          "kind": "general",
+          "religion": "christian"
+        }
+      ]
+    }
+  }
+}

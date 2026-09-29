@@ -1,0 +1,258 @@
+@import 'tailwindcss';
+
+/* next-themes adds .dark / .light on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* -------------------------------------------------------------------------- */
+/*  Design tokens                                                             */
+/* -------------------------------------------------------------------------- */
+:root {
+  --canvas: #f5f7f4;
+  --canvas-accent: #e9f1ec;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-2: #ffffff;
+  --surface-3: #f1f4f1;
+  --line: rgba(13, 32, 24, 0.1);
+  --line-strong: rgba(13, 32, 24, 0.16);
+  --ink: #0c1a13;
+  --muted: #5c6b63;
+  --muted-soft: #8a978f;
+
+  --brand: #00795f;
+  --brand-strong: #006b53;
+  --brand-soft: rgba(0, 121, 95, 0.09);
+  --brand-ring: rgba(0, 121, 95, 0.35);
+
+  --holiday: #c81e37;
+  --holiday-soft: rgba(200, 30, 55, 0.09);
+  --holiday-ring: rgba(200, 30, 55, 0.28);
+
+  --event: #0f766e;
+  --event-soft: rgba(15, 118, 110, 0.1);
+
+  --shadow-card: 0 1px 2px rgba(13, 32, 24, 0.04), 0 12px 32px -12px rgba(13, 32, 24, 0.14);
+  --shadow-pop: 0 24px 60px -20px rgba(13, 32, 24, 0.35);
+}
+
+.dark {
+  --canvas: #071410;
+  --canvas-accent: #0b1e18;
+  --surface: rgba(16, 30, 25, 0.72);
+  --surface-2: #0e1f19;
+  --surface-3: #12261f;
+  --line: rgba(167, 214, 196, 0.13);
+  --line-strong: rgba(167, 214, 196, 0.22);
+  --ink: #e8f2ed;
+  --muted: #9db2a8;
+  --muted-soft: #7f948a;
+
+  --brand: #35cfa5;
+  --brand-strong: #1eb68d;
+  --brand-soft: rgba(53, 207, 165, 0.13);
+  --brand-ring: rgba(53, 207, 165, 0.4);
+
+  --holiday: #ff8095;
+  --holiday-soft: rgba(255, 92, 116, 0.15);
+  --holiday-ring: rgba(255, 128, 149, 0.35);
+
+  --event: #56d6c9;
+  --event-soft: rgba(86, 214, 201, 0.13);
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 40px -18px rgba(0, 0, 0, 0.7);
+  --shadow-pop: 0 30px 70px -24px rgba(0, 0, 0, 0.8);
+}
+
+@theme {
+  /* Google Fonts loaded through a <link> in app/layout.tsx so the build never needs
+     network access (self-host them with next/font if you prefer — see README). */
+  --font-bengali: 'Hind Siliguri', 'Noto Sans Bengali', 'Kalpurush', 'SolaimanLipi', system-ui,
+    -apple-system, 'Segoe UI', sans-serif;
+  --font-latin: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Noto Serif Bengali', 'Hind Siliguri', 'Noto Sans Bengali', serif;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-canvas-accent: var(--canvas-accent);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-muted-soft: var(--muted-soft);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-holiday: var(--holiday);
+  --color-holiday-soft: var(--holiday-soft);
+  --color-event: var(--event);
+  --color-event-soft: var(--event-soft);
+
+  --radius-card: 1.5rem;
+  --radius-cell: 0.9rem;
+
+  --shadow-card: var(--shadow-card);
+  --shadow-pop: var(--shadow-pop);
+
+  --animate-fade-in: fade-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-rise: rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-pop: pop 0.24s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-soft-pulse: soft-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--brand-ring);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Base                                                                      */
+/* -------------------------------------------------------------------------- */
+@layer base {
+  :root {
+    --font-app: var(--font-bengali);
+  }
+
+  html[data-lang='en'] {
+    --font-app: var(--font-latin);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    background-color: var(--canvas);
+  }
+
+  body {
+    color: var(--ink);
+    font-family: var(--font-app);
+    font-feature-settings: 'kern' 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Ambient background wash — Bangladesh green + a warm festival glow. */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(60rem 40rem at 12% -10%, color-mix(in oklab, var(--brand) 18%, transparent), transparent 65%),
+      radial-gradient(50rem 35rem at 105% 8%, color-mix(in oklab, var(--holiday) 12%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--canvas) 0%, var(--canvas-accent) 100%);
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--brand) 28%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 0.5rem;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-strong) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--line-strong);
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(16px) saturate(130%);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-radius: 999px;
+    padding: 0.15rem 0.55rem;
+    font-size: 0.7rem;
+    line-height: 1.35;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .digit {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media print {
+  body::before,
+  .no-print {
+    display: none !important;
+  }
+
+  .glass-card {
+    box-shadow: none;
+    background: #fff;
+  }
+}
