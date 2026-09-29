@@ -90,7 +90,9 @@ export function AppHeader({
 
         {/* Controls */}
         <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-          <div className="min-w-[13.5rem] flex-1 sm:max-w-[17rem]">
+          {/* Wide enough that the longest label ("Gregorian" in English) sits on a single line,
+              but never wider than the viewport on very small screens. */}
+          <div className="min-w-[min(15.5rem,calc(100vw-2rem))] flex-1 sm:max-w-[17rem]">
             <Segmented
               ariaLabel={t('viewLabel')}
               value={view}

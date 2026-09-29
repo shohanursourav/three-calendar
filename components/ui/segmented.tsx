@@ -55,6 +55,10 @@ export function Segmented<T extends string | number>({
       />
       {options.map((option) => {
         const active = option.value === value;
+        // A single word must never be split across two lines ("Gregoria" / "n" looked broken
+        // whenever the English label was wider than its third of the control). Labels that
+        // contain spaces (e.g. "All holidays (2024–2026)") may still wrap between words.
+        const multiWord = /\s/.test(String(option.label));
         return (
           <button
             key={String(option.value)}
@@ -70,7 +74,14 @@ export function Segmented<T extends string | number>({
             )}
           >
             {option.icon}
-            <span className="min-w-0 text-balance break-words text-center leading-tight">{option.label}</span>
+            <span
+              className={cn(
+                'min-w-0 text-center leading-tight',
+                multiWord ? 'text-balance break-words' : 'whitespace-nowrap',
+              )}
+            >
+              {option.label}
+            </span>
           </button>
         );
       })}
