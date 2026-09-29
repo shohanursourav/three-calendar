@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Three Calendar">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00a37b"/>
+      <stop offset="1" stop-color="#006a4e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <rect x="12" y="16" width="40" height="36" rx="8" fill="#ffffff" opacity="0.95"/>
+  <rect x="12" y="16" width="40" height="10" rx="5" fill="#f42a41"/>
+  <circle cx="24" cy="36" r="3" fill="#006a4e"/>
+  <circle cx="34" cy="36" r="3" fill="#006a4e" opacity="0.55"/>
+  <circle cx="44" cy="36" r="3" fill="#006a4e" opacity="0.3"/>
+  <circle cx="24" cy="45" r="3" fill="#006a4e" opacity="0.55"/>
+  <circle cx="34" cy="45" r="3" fill="#006a4e" opacity="0.3"/>
+</svg>

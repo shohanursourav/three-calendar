@@ -1,0 +1,32 @@
+{
+  "name": "three-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beautiful bilingual (বাংলা / English) calendar for Bangladesh with Gregorian, Bangla (বঙ্গাব্দ) and Hijri views, official public holidays and .ics sync.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "validate:data": "node scripts/validate-holidays.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.475.0",
+    "next": "^15.1.6",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

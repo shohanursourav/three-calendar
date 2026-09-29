@@ -1,0 +1,155 @@
+{
+  "_readme": [
+    "Hijri (হিজরি / lunar) months and the Islamic events that the calendar highlights.",
+    "Events use exact Hijri dates (day + month) so they are correct for every year,",
+    "and are converted to Gregorian dates with the Bangladesh moon-sighting table in lib/hijri.ts.",
+    "'rule' based events cannot be expressed as a Hijri day number (last Friday of Ramadan, etc.)",
+    "and are resolved by dedicated logic in lib/hijri.ts."
+  ],
+  "months": [
+    { "bn": "মুহাররম", "en": "Muharram", "ar": "ٱلْمُحَرَّم" },
+    { "bn": "সফর", "en": "Safar", "ar": "صَفَر" },
+    { "bn": "রবিউল আউয়াল", "en": "Rabi' al-Awwal", "ar": "رَبِيع ٱلْأَوَّل" },
+    { "bn": "রবিউস সানি", "en": "Rabi' al-Thani", "ar": "رَبِيع ٱلثَّانِي" },
+    { "bn": "জমাদিউল আউয়াল", "en": "Jumada al-Awwal", "ar": "جُمَادَىٰ ٱلْأُولَىٰ" },
+    { "bn": "জমাদিউস সানি", "en": "Jumada al-Thani", "ar": "جُمَادَىٰ ٱلثَّانِيَة" },
+    { "bn": "রজব", "en": "Rajab", "ar": "رَجَب" },
+    { "bn": "শাবান", "en": "Sha'ban", "ar": "شَعْبَان" },
+    { "bn": "রমজান", "en": "Ramadan", "ar": "رَمَضَان" },
+    { "bn": "শাওয়াল", "en": "Shawwal", "ar": "شَوَّال" },
+    { "bn": "জিলকদ", "en": "Dhu al-Qi'dah", "ar": "ذُو ٱلْقَعْدَة" },
+    { "bn": "জিলহজ", "en": "Dhu al-Hijjah", "ar": "ذُو ٱلْحِجَّة" }
+  ],
+  "events": [
+    {
+      "id": "islamic-new-year",
+      "hijri": { "month": 1, "day": 1 },
+      "bn": "হিজরি নববর্ষ",
+      "en": "Islamic New Year",
+      "hijriLabelBn": "১ মুহাররম",
+      "hijriLabelEn": "1 Muharram",
+      "descBn": "হিজরি সনের প্রথম দিন — মহানবী (সা.)-এর মক্কা থেকে মদিনায় হিজরতের স্মৃতিতে এ সন গণনা শুরু হয়।",
+      "descEn": "First day of the Hijri year, marking the migration (Hijrah) of Prophet Muhammad (PBUH) from Makkah to Madinah."
+    },
+    {
+      "id": "ashura",
+      "hijri": { "month": 1, "day": 10 },
+      "bn": "আশুরা",
+      "en": "Ashura",
+      "hijriLabelBn": "১০ মুহাররম",
+      "hijriLabelEn": "10 Muharram",
+      "descBn": "কারবালার মর্মান্তিক ঘটনার দিন — হযরত ইমাম হুসাইন (রা.) ও তাঁর সঙ্গীদের শাহাদাত। ত্যাগ ও শোকের দিন হিসেবে পালিত।",
+      "descEn": "Day of the tragedy of Karbala — the martyrdom of Imam Husayn (RA) and his companions; observed with mourning and reflection."
+    },
+    {
+      "id": "eid-e-miladunnabi",
+      "hijri": { "month": 3, "day": 12 },
+      "bn": "ঈদে মিলাদুন্নবী (সা.)",
+      "en": "Eid-e-Miladunnabi (PBUH)",
+      "hijriLabelBn": "১২ রবিউল আউয়াল",
+      "hijriLabelEn": "12 Rabi' al-Awwal",
+      "descBn": "মহানবী হযরত মুহাম্মদ (সা.)-এর জন্ম ও ওফাতের দিন — বাংলাদেশে সরকারি ছুটি।",
+      "descEn": "Birth and passing of Prophet Muhammad (PBUH) — a public holiday in Bangladesh."
+    },
+    {
+      "id": "fateha-e-yajdaham",
+      "hijri": { "month": 4, "day": 11 },
+      "bn": "ফাতেহা-ই-ইয়াজদাহম",
+      "en": "Fateha-e-Yajdaham",
+      "hijriLabelBn": "১১ রবিউস সানি",
+      "hijriLabelEn": "11 Rabi' al-Thani",
+      "descBn": "বড় পীর হযরত আবদুল কাদের জিলানী (রহ.)-এর স্মরণে পালিত ধর্মীয় দিবস (ঐচ্ছিক ছুটি)।",
+      "descEn": "Observance in memory of Hazrat Abdul Qadir Jilani (RA); listed as an optional holiday in Bangladesh."
+    },
+    {
+      "id": "shab-e-meraj",
+      "hijri": { "month": 7, "day": 27 },
+      "bn": "শবে মেরাজ",
+      "en": "Shab-e-Meraj (Isra & Mi'raj)",
+      "hijriLabelBn": "২৭ রজব",
+      "hijriLabelEn": "27 Rajab",
+      "descBn": "মহানবী (সা.)-এর ঊর্ধ্বলোক ভ্রমণ (মেরাজ) এর রাত — ইবাদত ও জাগরণের রাত।",
+      "descEn": "The night of the Prophet's (PBUH) ascension (Isra & Mi'raj) — observed with night prayer and devotion."
+    },
+    {
+      "id": "shab-e-barat",
+      "hijri": { "month": 8, "day": 15 },
+      "bn": "শবে বরাত",
+      "en": "Shab-e-Barat",
+      "hijriLabelBn": "১৫ শাবান",
+      "hijriLabelEn": "15 Sha'ban",
+      "descBn": "ভাগ্যরজনী — ইবাদত, কোরআন তিলাওয়াত ও মৃত আত্মীয়দের জন্য দোয়ার রাত।",
+      "descEn": "The Night of Records — a night of prayer, Quran recitation and seeking forgiveness."
+    },
+    {
+      "id": "ramadan-start",
+      "hijri": { "month": 9, "day": 1 },
+      "bn": "পবিত্র রমজান শুরু",
+      "en": "Ramadan begins",
+      "hijriLabelBn": "১ রমজান",
+      "hijriLabelEn": "1 Ramadan",
+      "descBn": "রোজার মাস শুরু — ভোর সেহরি থেকে সন্ধ্যা ইফতার পর্যন্ত সংযম ও ইবাদত।",
+      "descEn": "The month of fasting begins — daily fasting from Sahur before dawn to Iftar at sunset."
+    },
+    {
+      "id": "shab-e-qadr",
+      "hijri": { "month": 9, "day": 27 },
+      "bn": "শবে কদর (লাইলাতুল কদর)",
+      "en": "Shab-e-Qadr (Laylat al-Qadr)",
+      "hijriLabelBn": "২৭ রমজান",
+      "hijriLabelEn": "27 Ramadan",
+      "descBn": "হাজার মাসের চেয়ে শ্রেষ্ঠ রাত — পবিত্র কোরআন নাজিলের সূচনা; ব্যাপক ইবাদত ও দোয়ার রাত।",
+      "descEn": "The Night of Destiny, better than a thousand months — the night when the Quran began to be revealed."
+    },
+    {
+      "id": "eid-ul-fitr",
+      "hijri": { "month": 10, "day": 1 },
+      "bn": "ঈদুল ফিতর",
+      "en": "Eid-ul-Fitr",
+      "hijriLabelBn": "১ শাওয়াল",
+      "hijriLabelEn": "1 Shawwal",
+      "descBn": "রমজানের শেষে সবচেয়ে বড় ধর্মীয় উৎসব — ফিতরা দান, ঈদগাহে নামাজ ও পারিবারিক আনন্দ।",
+      "descEn": "The biggest festival after Ramadan — Eid prayer, giving Fitrah and family celebrations."
+    },
+    {
+      "id": "day-of-arafah",
+      "hijri": { "month": 12, "day": 9 },
+      "bn": "আরাফাহ দিবস",
+      "en": "Day of Arafah",
+      "hijriLabelBn": "৯ জিলহজ",
+      "hijriLabelEn": "9 Dhu al-Hijjah",
+      "descBn": "হজের মূল দিন — আরাফাতের ময়দানে হাজিদের অবস্থান; রোজা রাখা সুন্নত।",
+      "descEn": "The central day of Hajj — pilgrims gather at Arafah; fasting on this day is a recommended sunnah."
+    },
+    {
+      "id": "eid-ul-adha",
+      "hijri": { "month": 12, "day": 10 },
+      "bn": "ঈদুল আজহা (কুরবানি)",
+      "en": "Eid-ul-Adha (Qurbani)",
+      "hijriLabelBn": "১০ জিলহজ",
+      "hijriLabelEn": "10 Dhu al-Hijjah",
+      "descBn": "ত্যাগের উৎসব — হযরত ইব্রাহিম (আ.)-এর কুরবানির স্মরণে পশু কুরবানি ও গরিবদের মাঝে বিতরণ।",
+      "descEn": "The festival of sacrifice, commemorating Prophet Ibrahim's (AS) devotion to God."
+    },
+    {
+      "id": "jumatul-wida",
+      "rule": "lastFridayOfRamadan",
+      "bn": "জুমাতুল বিদা",
+      "en": "Jumatul Wida",
+      "hijriLabelBn": "রমজানের শেষ জুমা",
+      "hijriLabelEn": "Last Friday of Ramadan",
+      "descBn": "রমজানের বিদায়ের জুমা — বাংলাদেশে সরকারি ছুটি সহ বিশেষ ইবাদতের দিন।",
+      "descEn": "The farewell Friday of Ramadan — a significant day of congregational prayer."
+    },
+    {
+      "id": "akhiri-chahar-somba",
+      "rule": "lastWednesdayOfSafar",
+      "bn": "আখেরি চাহার সোম্বা",
+      "en": "Akhiri Chahar Somba",
+      "hijriLabelBn": "সফরের শেষ বুধবার",
+      "hijriLabelEn": "Last Wednesday of Safar",
+      "descBn": "সফর মাসের শেষ বুধবার — সুস্থতা ও নিরাপত্তার কামনায় বিশেষ দোয়া ও মিষ্টি খাবারের প্রথা (ঐচ্ছিক ছুটি)।",
+      "descEn": "Last Wednesday of Safar — a day of special prayers for wellbeing; an optional holiday in Bangladesh."
+    }
+  ]
+}

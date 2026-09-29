@@ -1,0 +1,39 @@
+{
+  "_readme": [
+    "The Bangla (বঙ্গাব্দ) calendar as used officially in Bangladesh after the 2019 reform",
+    "(বাংলা একাডেমি / শামসুজ্জামান খান কমিটি).",
+    "Rules: Boishakh – Ashwin (months 1-6) are 31 days, Kartik – Chaitra are 30 days,",
+    "Falgun is 29 days and becomes 30 days whenever the Gregorian year in which it falls is a leap year.",
+    "Pahela Baishakh (1 Boishakh) is always 14 April and 1 Poush is always 16 December.",
+    "Bangla year = Gregorian year - 593 (for dates on/after 14 April) and -594 before 14 April."
+  ],
+  "epochOffset": 593,
+  "newYear": { "month": 4, "day": 14 },
+  "monthLengths": {
+    "fixed": [31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 29, 30],
+    "falgunIndex": 10,
+    "falgunInLeapYear": 30
+  },
+  "months": [
+    { "id": "boishakh", "bn": "বৈশাখ", "en": "Boishakh", "translit": "Baishakh", "season": "grishma" },
+    { "id": "jyaistha", "bn": "জ্যৈষ্ঠ", "en": "Jyaistha", "translit": "Jaistha", "season": "grishma" },
+    { "id": "asharh", "bn": "আষাঢ়", "en": "Asharh", "translit": "Ashar", "season": "barsha" },
+    { "id": "srabon", "bn": "শ্রাবণ", "en": "Srabon", "translit": "Srabon", "season": "barsha" },
+    { "id": "bhadro", "bn": "ভাদ্র", "en": "Bhadro", "translit": "Bhadro", "season": "sharat" },
+    { "id": "ashwin", "bn": "আশ্বিন", "en": "Ashwin", "translit": "Ashwin", "season": "sharat" },
+    { "id": "kartik", "bn": "কার্তিক", "en": "Kartik", "translit": "Kartik", "season": "hemanta" },
+    { "id": "ogrohayon", "bn": "অগ্রহায়ণ", "en": "Ogrohayon", "translit": "Ogrohayon", "season": "hemanta" },
+    { "id": "poush", "bn": "পৌষ", "en": "Poush", "translit": "Poush", "season": "sheet" },
+    { "id": "magh", "bn": "মাঘ", "en": "Magh", "translit": "Magh", "season": "sheet" },
+    { "id": "falgun", "bn": "ফাল্গুন", "en": "Falgun", "translit": "Falgun", "season": "basanta" },
+    { "id": "chaitra", "bn": "চৈত্র", "en": "Chaitra", "translit": "Chaitra", "season": "basanta" }
+  ],
+  "seasons": {
+    "grishma": { "bn": "গ্রীষ্ম", "en": "Summer", "emoji": "☀️" },
+    "barsha": { "bn": "বর্ষা", "en": "Monsoon", "emoji": "🌧️" },
+    "sharat": { "bn": "শরৎ", "en": "Autumn", "emoji": "🌾" },
+    "hemanta": { "bn": "হেমন্ত", "en": "Late Autumn", "emoji": "🍂" },
+    "sheet": { "bn": "শীত", "en": "Winter", "emoji": "❄️" },
+    "basanta": { "bn": "বসন্ত", "en": "Spring", "emoji": "🌸" }
+  }
+}
