@@ -138,6 +138,7 @@ export function MonthCard({
             <button
               type="button"
               onClick={onOpenSync}
+              aria-label={t('syncTitle')}
               className="inline-flex items-center gap-1.5 rounded-full bg-brand-soft px-3 py-2 text-xs font-semibold text-brand transition-colors hover:bg-brand/20 lg:hidden"
             >
               <CloudDownload className="h-3.5 w-3.5" />

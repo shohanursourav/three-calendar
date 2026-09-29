@@ -162,6 +162,8 @@
   }
 
   body {
+    overflow-x: clip;
+    -webkit-tap-highlight-color: transparent;
     color: var(--ink);
     font-family: var(--font-app);
     font-feature-settings: 'kern' 1;
