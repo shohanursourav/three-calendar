@@ -64,13 +64,13 @@ export function Segmented<T extends string | number>({
             title={option.hint}
             onClick={() => onChange(option.value)}
             className={cn(
-              'flex flex-1 items-center justify-center gap-1.5 rounded-full font-medium transition-colors duration-200',
+              'flex min-w-0 flex-1 basis-0 items-center justify-center gap-1.5 rounded-full font-medium transition-colors duration-200',
               size === 'sm' ? 'px-2 py-1' : 'px-3 py-1.5',
               active ? 'text-ink' : 'text-muted hover:text-ink',
             )}
           >
             {option.icon}
-            <span className="truncate">{option.label}</span>
+            <span className="min-w-0 text-balance break-words text-center leading-tight">{option.label}</span>
           </button>
         );
       })}
