@@ -15,8 +15,8 @@
     "falgunInLeapYear": 30
   },
   "months": [
-    { "id": "boishakh", "bn": "বৈশাখ", "en": "Boishakh", "translit": "Baishakh", "season": "grishma" },
-    { "id": "jyaistha", "bn": "জ্যৈষ্ঠ", "en": "Jyaistha", "translit": "Jaistha", "season": "grishma" },
+    { "id": "boishakh", "bn": "বৈশাখ", "en": "Baishakh", "translit": "Boishakh", "season": "grishma" },
+    { "id": "jyaistha", "bn": "জ্যৈষ্ঠ", "en": "Jaistha", "translit": "Jyaistha", "season": "grishma" },
     { "id": "asharh", "bn": "আষাঢ়", "en": "Asharh", "translit": "Ashar", "season": "barsha" },
     { "id": "srabon", "bn": "শ্রাবণ", "en": "Srabon", "translit": "Srabon", "season": "barsha" },
     { "id": "bhadro", "bn": "ভাদ্র", "en": "Bhadro", "translit": "Bhadro", "season": "sharat" },

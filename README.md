@@ -42,7 +42,7 @@ backend and no paid API.
 | | |
 |---|---|
 | **Three calendars, one grid** | The same day shown three ways — pick the lens with the segmented control. Each day cell still carries all three dates, so overlays are always in sync. |
-| **Bengali-first** | Bengali is the default language: month names (`বৈশাখ`, `জানুয়ারি`), weekday names, holiday names and **Bengali numerals (০১২৩৪৫৬৭৮৯)**. One tap switches the whole UI to English (`Baishakh`, `January`, `12`). |
+| **Bengali-first** | Bengali is the default language: month names (`বৈশাখ`, `জানুয়ারি`), weekday names, holiday names and **Bengali numerals (০১২৩৪৫৬৭৮৯)**. One tap switches the whole UI to English (`Baishakh`, `Jaistha`, `January`, `12`). |
 | **Official holiday data only** | Hand-curated JSON from the notifications of the **Ministry of Public Administration** for **2025** and **2026**. No dummy, guessed or placeholder years. |
 | **Honest missing-data notice** | Navigating to 2027+ shows an elegant notice in the active language: *“Public holiday data for this year is not yet available and will be updated once released.”* |
 | **Islamic events on their Hijri dates** | Eid-ul-Fitr, Eid-ul-Adha, Shab-e-Barat, Shab-e-Qadr, Shab-e-Meraj, Ashura, Eid-e-Miladunnabi, Jumatul Wida, Akhiri Chahar Somba, Arafah and more — each with a short description in Bengali/English. |
