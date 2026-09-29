@@ -179,7 +179,7 @@ function SettingsMenu({
   return (
     <Popover
       align="end"
-      panelClassName="w-80"
+      panelClassName="w-80 max-w-[calc(100vw-2rem)]"
       trigger={({ open, toggle }) => (
         <IconButton
           label={t('settings')}

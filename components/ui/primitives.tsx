@@ -57,7 +57,7 @@ export function TooltipBubble({
     <span
       role="tooltip"
       className={cn(
-        'pointer-events-none absolute z-40 w-max max-w-[min(15rem,calc(100vw-9rem))] scale-95 rounded-xl border border-line bg-surface-2 px-3 py-2 text-left text-xs leading-relaxed text-ink opacity-0 shadow-pop transition-all duration-200',
+        'pointer-events-none absolute z-40 hidden w-max [@media(hover:hover)]:block max-w-[min(15rem,calc(100vw-9rem))] scale-95 rounded-xl border border-line bg-surface-2 px-3 py-2 text-left text-xs leading-relaxed text-ink opacity-0 shadow-pop transition-all duration-200',
         align === 'center' && 'left-1/2 -translate-x-1/2',
         align === 'start' && 'left-0',
         align === 'end' && 'right-0',
@@ -152,7 +152,7 @@ export function Popover({
       {open ? (
         <div
           className={cn(
-            'absolute top-[calc(100%+0.6rem)] z-50 w-72 origin-top animate-pop rounded-3xl border border-line bg-surface-2 p-3 shadow-pop',
+            'absolute top-[calc(100%+0.6rem)] z-50 w-72 max-w-[calc(100vw-2rem)] origin-top animate-pop rounded-3xl border border-line bg-surface-2 p-3 shadow-pop',
             align === 'end' ? 'right-0' : 'left-0',
             panelClassName,
           )}
@@ -213,7 +213,7 @@ export function Modal({
         aria-modal="true"
         aria-labelledby={titleId}
         className={cn(
-          'relative z-10 max-h-[92vh] w-full animate-rise overflow-y-auto rounded-t-3xl border border-line bg-surface-2 p-5 shadow-pop sm:rounded-3xl sm:p-6',
+          'relative z-10 pb-[max(1.25rem,env(safe-area-inset-bottom))] max-h-[92vh] max-h-[92dvh] w-full animate-rise overflow-y-auto rounded-t-3xl border border-line bg-surface-2 p-5 shadow-pop sm:rounded-3xl sm:p-6',
           maxWidth,
         )}
       >

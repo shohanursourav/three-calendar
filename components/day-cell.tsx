@@ -88,14 +88,14 @@ export function DayCell({
   );
 
   return (
-    <div className="group/cell relative transition-[z-index] hover:z-30 focus-within:z-30">
+    <div className="group/cell relative min-w-0 transition-[z-index] hover:z-30 focus-within:z-30">
       <button
         type="button"
         onClick={() => onSelect(cell)}
         aria-current={cell.isToday ? 'date' : undefined}
         aria-pressed={selected}
         className={cn(
-          'relative flex h-full min-h-[4.4rem] w-full flex-col gap-1 overflow-hidden rounded-cell border p-1.5 text-left transition-all duration-300 sm:min-h-[5.75rem] sm:p-2.5',
+          'relative flex h-full min-h-[4.4rem] w-full min-w-0 touch-manipulation flex-col gap-1 overflow-hidden rounded-cell border p-1 min-[400px]:p-1.5 text-left transition-all duration-300 sm:min-h-[5.75rem] sm:p-2.5',
           'focus-visible:outline-none',
           cell.inMonth
             ? 'border-line bg-surface-2/70 hover:-translate-y-0.5 hover:border-line-strong hover:bg-surface-2 hover:shadow-[0_14px_30px_-18px_rgba(0,0,0,0.45)]'
@@ -118,9 +118,9 @@ export function DayCell({
             {primary}
           </span>
 
-          <span className="flex items-center gap-1 pt-0.5">
-            {hasHoliday ? <span className="h-2 w-2 rounded-full bg-holiday shadow-sm" /> : null}
-            {hasEvent ? <MoonStar className="h-3.5 w-3.5 text-event" /> : null}
+          <span className="absolute right-1 top-1 flex items-center gap-0.5 sm:static sm:gap-1 sm:pt-0.5">
+            {hasHoliday ? <span className="h-1.5 w-1.5 rounded-full bg-holiday shadow-sm sm:h-2 sm:w-2" /> : null}
+            {hasEvent ? <MoonStar className="h-2.5 w-2.5 text-event sm:h-3.5 sm:w-3.5" /> : null}
             {cell.isToday && cell.inMonth ? (
               <span className="hidden rounded-full bg-brand px-1.5 py-0.5 text-[0.55rem] font-semibold uppercase text-white sm:inline-block">
                 {t('today')}
@@ -134,7 +134,7 @@ export function DayCell({
             <span
               key={line}
               className={cn(
-                'digit truncate text-[0.6rem] leading-tight sm:text-[0.68rem]',
+                'digit truncate text-[0.55rem] leading-tight min-[400px]:text-[0.6rem] sm:text-[0.68rem]',
                 index === 0 ? 'text-muted' : 'text-muted-soft',
                 !cell.inMonth && 'text-muted-soft',
               )}
