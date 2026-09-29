@@ -193,7 +193,7 @@ export function MonthCard({
                 view={view}
                 selected={cell.key === selectedKey}
                 tooltipSide={weekIndex === 0 ? 'bottom' : 'top'}
-                tooltipAlign={dayIndex === 0 ? 'start' : dayIndex === 6 ? 'end' : 'center'}
+                tooltipAlign={dayIndex <= 2 ? 'start' : dayIndex >= 4 ? 'end' : 'center'}
                 onSelect={onSelect}
               />
             )),

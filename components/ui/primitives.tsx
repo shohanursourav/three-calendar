@@ -57,7 +57,7 @@ export function TooltipBubble({
     <span
       role="tooltip"
       className={cn(
-        'pointer-events-none absolute z-40 w-max max-w-[15rem] scale-95 rounded-xl border border-line bg-surface-2 px-3 py-2 text-left text-xs leading-relaxed text-ink opacity-0 shadow-pop transition-all duration-200',
+        'pointer-events-none absolute z-40 w-max max-w-[min(15rem,calc(100vw-9rem))] scale-95 rounded-xl border border-line bg-surface-2 px-3 py-2 text-left text-xs leading-relaxed text-ink opacity-0 shadow-pop transition-all duration-200',
         align === 'center' && 'left-1/2 -translate-x-1/2',
         align === 'start' && 'left-0',
         align === 'end' && 'right-0',

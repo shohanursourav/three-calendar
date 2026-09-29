@@ -17,7 +17,7 @@ interface DayCellProps {
   selected: boolean;
   /** First row of the grid opens its tooltip downwards so it is never clipped by the card. */
   tooltipSide?: 'top' | 'bottom';
-  /** Edge columns anchor the tooltip so it never overflows the card. */
+  /** Near-edge columns anchor the tooltip so it stays inside the clipped calendar card. */
   tooltipAlign?: 'center' | 'start' | 'end';
   onSelect: (cell: DayCellType) => void;
 }
